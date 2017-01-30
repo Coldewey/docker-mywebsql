@@ -41,6 +41,8 @@ RUN chmod +x /sbin/pre-conf; sync \
     && /bin/bash -c /sbin/pre-conf \
     && rm /sbin/pre-conf
 
+ADD servers.php /var/www/mywebsql/config/servers.php
+
 #add files and script that need to be use for this container
 #include conf file relate to service/daemon 
 #additionsl tools to be use internally 
